@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-// import adlDriverimg from "../static/adlCustomer.png";
 import webAppImg1 from "../static/avid1.png";
 import webAppImg2 from "../static/avid2.png";
 import webAppImg3 from "../static/avid3.png";
@@ -19,8 +17,8 @@ export default function WebApplicationTaxi(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: webAppImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const buttons = [1, 2, 3, 4, 5, 6, 7, 8];
   const images = [
@@ -51,17 +49,20 @@ export default function WebApplicationTaxi(props) {
           <h5> Node.js - Flutter - MySQL</h5>
         </header>
         <div className="avidAlbum">
-            {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"} 
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {/* {state.isOpen && (
             <Lightbox

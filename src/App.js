@@ -16,15 +16,12 @@ import AdlCustomer from "./Components/adlCustomer";
 import AdlCmr from "./Components/adlCmr";
 import WebApplicationTaxi from "./Components/webApp";
 import Avid from "./Components/avid";
-
-import "swiper/swiper-bundle.css";
 import Fahrzeug from "./Components/fahrzeug";
 import FahrzeugAdmin from "./Components/fahrzeugAdmin";
 import TaxiCountry from "./Components/TaxiCountry";
 import Englishhob from "./Components/englishhob";
 import Zoshk from "./Components/zoshk";
 import Taxi1830 from "./Components/taxi1830";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   // const location = useLocation();

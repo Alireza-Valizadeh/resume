@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-import adlDriverimg from "../static/adlCustomer.png";
 import adlDriverImg1 from "../static/englishhob1.png";
 import adlDriverImg2 from "../static/englishhob2.png";
 import adlDriverImg3 from "../static/englishhob3.png";
@@ -17,14 +15,14 @@ export default function Englishhob(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
     { url: adlDriverImg1, title: "لیست کلاس ها" },
-    { url: adlDriverImg2, title: "صفحه ورود"  },
-    { url: adlDriverImg3, title:  "  پنل زبان آموزان" },
+    { url: adlDriverImg2, title: "صفحه ورود" },
+    { url: adlDriverImg3, title: "  پنل زبان آموزان" },
     { url: adlDriverImg4, title: "کارنامه زبان آموز" },
     { url: adlDriverImg5, title: "ارسال پیشنهاد" },
     { url: adlDriverImg6, title: "صفحه  ارتباط" },
@@ -47,28 +45,31 @@ export default function Englishhob(props) {
           <h5> Node.js - React.js - MySQL</h5>
         </header>
         <div className="album">
-            {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"}
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {state.isOpen && (
-            <Lightbox
-              images={images}
-              allowRotate={false}
-              style={{height: '100vh'}}
-              onClose={() => setState({ isOpen: false })}
-              startIndex={state.selectedImg}
-              keyboardInteraction={true}
-            />
-          )}
+          <Lightbox
+            images={images}
+            allowRotate={false}
+            style={{ height: "100vh" }}
+            onClose={() => setState({ isOpen: false })}
+            startIndex={state.selectedImg}
+            keyboardInteraction={true}
+          />
+        )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

@@ -1,13 +1,10 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-import adlDriverimg from "../static/adlCustomer.png";
 import adlDriverImg1 from "../static/18301.png";
 import adlDriverImg2 from "../static/18302.png";
 import adlDriverImg3 from "../static/18303.png";
 import adlDriverImg4 from "../static/18304.png";
 import adlDriverImg5 from "../static/18305.png";
 import adlDriverImg6 from "../static/18306.png";
-import title from "../static/1830title.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
 import Lightbox from "react-awesome-lightbox";
@@ -19,12 +16,12 @@ export default function Taxi1830(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const images = [
     { url: adlDriverImg1, title: "صفحه ورود" },
-    { url: adlDriverImg2, title: "ثبت سفر "  },
+    { url: adlDriverImg2, title: "ثبت سفر " },
     { url: adlDriverImg3, title: "آدرس های ثبت شده" },
     { url: adlDriverImg4, title: "محدوده ایستگاه ها" },
     { url: adlDriverImg5, title: "  تلفن آنلاین " },
@@ -57,36 +54,35 @@ export default function Taxi1830(props) {
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <div className="album">
-            {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"}
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {state.isOpen && (
-            <Lightbox
-              images={images}
-              allowRotate={false}
-              style={{height: '100vh'}}
-              onClose={() => setState({ isOpen: false })}
-              startIndex={state.selectedImg}
-              keyboardInteraction={true}
-            />
-          )}
+          <Lightbox
+            images={images}
+            allowRotate={false}
+            style={{ height: "100vh" }}
+            onClose={() => setState({ isOpen: false })}
+            startIndex={state.selectedImg}
+            keyboardInteraction={true}
+          />
+        )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}
-          <a
-            href="https://panel1830.ir"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://panel1830.ir" target="_blank" rel="noreferrer">
             {" "}
             https://panel1830.ir{" "}
           </a>

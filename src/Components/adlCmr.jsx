@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-// import adlDriverimg from "../static/adlCustomer.png";
 import adlCmrImg1 from "../static/adlCmr1.png";
 import adlCmrImg2 from "../static/adlCmr2.png";
 import adlCmrImg3 from "../static/adlCmr3.png";
@@ -9,16 +7,6 @@ import adlCmrImg5 from "../static/adlCmr5.png";
 import adlCmrImg6 from "../static/adlCmr6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
-import "swiper/swiper-bundle.min.css";
-
-// swiper core styles
-import "swiper/swiper.min.css";
-
-// modules styles
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, EffectCoverflow } from "swiper";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 
@@ -27,14 +15,14 @@ export default function AdlCmr(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlCmrImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
     { url: adlCmrImg1, title: "سالن اعلام بار" },
-    { url: adlCmrImg2, title: "پذیرش بار"  },
-    { url: adlCmrImg3, title:  "صدور حواله" },
+    { url: adlCmrImg2, title: "پذیرش بار" },
+    { url: adlCmrImg3, title: "صدور حواله" },
     { url: adlCmrImg4, title: "اسکن حواله" },
     { url: adlCmrImg5, title: "تایید بارنامه" },
     { url: adlCmrImg6, title: "اسکن  بارنامه" },
@@ -44,7 +32,6 @@ export default function AdlCmr(props) {
   useEffect(() => {
     zoom.current.scrollIntoView(false);
   }, []);
-
 
   return (
     <div className="mainWrapper">
@@ -57,29 +44,32 @@ export default function AdlCmr(props) {
           <h4>پنل باربری شرکت حمل و نقل </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
-        <div className="album" >
-        {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"}
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+        <div className="album">
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {state.isOpen && (
-            <Lightbox
-              images={images}
-              allowRotate={false}
-              style={{height: '100vh'}}
-              onClose={() => setState({ isOpen: false })}
-              startIndex={state.selectedImg}
-              keyboardInteraction={true}
-            />
-          )}
+          <Lightbox
+            images={images}
+            allowRotate={false}
+            style={{ height: "100vh" }}
+            onClose={() => setState({ isOpen: false })}
+            startIndex={state.selectedImg}
+            keyboardInteraction={true}
+          />
+        )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

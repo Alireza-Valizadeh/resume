@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-import adlDriverimg from "../static/adlCustomer.png";
 import adlCustomerImg1 from "../static/adlCustomer2.png";
 import adlCustomerImg2 from "../static/adlCustomer1.png";
 import adlCustomerImg3 from "../static/adlCustomer3.png";
@@ -9,7 +7,6 @@ import adlCustomerImg5 from "../static/adlCustomer5.png";
 import adlCustomerImg6 from "../static/adlCustomer6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
-import Slider from "react-slick";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 
@@ -18,16 +15,16 @@ export default function AdlCustomer(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlCustomerImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
     { url: adlCustomerImg3, title: "ثبت بار " },
-    { url: adlCustomerImg2, title: "جستجوی نشان"  },
-    { url: adlCustomerImg1, title:  "  ثبت بار " },
+    { url: adlCustomerImg2, title: "جستجوی نشان" },
+    { url: adlCustomerImg1, title: "  ثبت بار " },
     { url: adlCustomerImg4, title: "گزارش گردش حساب" },
-    { url: adlCustomerImg5, title: "اطلاعات کاربر"  },
+    { url: adlCustomerImg5, title: "اطلاعات کاربر" },
     { url: adlCustomerImg6, title: "بار های من" },
   ];
   const zoom = useRef();
@@ -47,29 +44,32 @@ export default function AdlCustomer(props) {
           <h4>پنل باربری صاحب کالا </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
-        <div className="album" >
-        {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"}
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+        <div className="album">
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {state.isOpen && (
-            <Lightbox
-              images={images}
-              allowRotate={false}
-              style={{height: '100vh'}}
-              onClose={() => setState({ isOpen: false })}
-              startIndex={state.selectedImg}
-              keyboardInteraction={true}
-            />
-          )}
+          <Lightbox
+            images={images}
+            allowRotate={false}
+            style={{ height: "100vh" }}
+            onClose={() => setState({ isOpen: false })}
+            startIndex={state.selectedImg}
+            keyboardInteraction={true}
+          />
+        )}
         <span>
           {" "}
           آدرس سایـــــــت:{" "}

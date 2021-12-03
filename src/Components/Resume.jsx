@@ -16,6 +16,22 @@ export default function Resume() {
     <div className="r">
       <h1> نمونه کارها </h1>
       <ResumeCard
+        img={order}
+        firstTitle={"رب زشک خراسان"}
+        secondTitle={"پنل مدیریت سفارشات"}
+        thirdTitle={"ASP.NET - React.js - SQL Server"}
+        show={true}
+        link={"/zoshk"}
+      />
+      <ResumeCard
+        img={taxi1830}
+        firstTitle={"آژانس 1830 مشهد"}
+        secondTitle={"پنل اپراتور تلفن و بیسیم"}
+        thirdTitle={"ASP.NET - React.js - SQL Server"}
+        show={true}
+        link={"/taxi1830"}
+      />
+      <ResumeCard
         img={adlDriver}
         firstTitle={"شرکت باربری عدل ترابران توس"}
         secondTitle={"پنل باربری صاحب کالا"}
@@ -86,22 +102,6 @@ export default function Resume() {
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
         link={"/Englishhob"}
-      />
-      <ResumeCard
-        img={order}
-        firstTitle={"رب زشک خراسان"}
-        secondTitle={"پنل مدیریت سفارشات"}
-        thirdTitle={"ASP.NET - React.js - SQL Server"}
-        show={true}
-        link={"/zoshk"}
-      />
-      <ResumeCard
-        img={taxi1830}
-        firstTitle={"آژانس 1830 مشهد"}
-        secondTitle={"پنل اپراتور تلفن و بیسیم"}
-        thirdTitle={"ASP.NET - React.js - SQL Server"}
-        show={true}
-        link={"/taxi1830"}
       />
     </div>
   );

@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import ProgressCircles from "./ProgressCircles";
-import { NavLink } from "react-router-dom";
 import Jobs from "./Jobs";
 import Resume from "./Resume";
-import nodesvg from "../static/node.svg";
 import { motion } from "framer-motion";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 export default function Homepage() {
   const [state, setState] = useState({
     isScrolled: false,
@@ -155,6 +153,7 @@ export default function Homepage() {
       <section id="jobs">
         <Jobs />
       </section>
+
       {state.isScrolled ? (
         <button className="scrollButton" onClick={() => backToTop()}>
           <lord-icon
@@ -165,6 +164,10 @@ export default function Homepage() {
           ></lord-icon>
         </button>
       ) : null}
+      {/* <footer>
+        <AiFillGithub size={45} color={"#666"} />
+        <AiFillLinkedin size={45} color={"#666"} />
+      </footer> */}
     </>
   );
 }

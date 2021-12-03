@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import ResumeCard from "./ResumeCard";
-// import adlDriverimg from "../static/adlCustomer.png";
+
 import webAppImg1 from "../static/webApp1.png";
 import webAppImg2 from "../static/webApp2.png";
 import webAppImg3 from "../static/webApp3.png";
@@ -17,8 +16,8 @@ export default function WebApplicationTaxi(props) {
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: webAppImg1,
-    selectedImg: 0, 
-    isOpen: false
+    selectedImg: 0,
+    isOpen: false,
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const zoom = useRef();
@@ -45,28 +44,31 @@ export default function WebApplicationTaxi(props) {
           <h5> Node.js - React.js - SQL Server</h5>
         </header>
         <div className="album">
-            {images.map((img, index) => (
-                <img src={img.url} alt={img.title} key={index + "img"}
-                onClick={() => {
-                  setState((prevState)=> ({
-                    ...prevState,
-                    isOpen: true ,
-                    selectedImg: index
-                  }))
-                }}
-                />
-            ))}
+          {images.map((img, index) => (
+            <img
+              src={img.url}
+              alt={img.title}
+              key={index + "img"}
+              onClick={() => {
+                setState((prevState) => ({
+                  ...prevState,
+                  isOpen: true,
+                  selectedImg: index,
+                }));
+              }}
+            />
+          ))}
         </div>
         {state.isOpen && (
-            <Lightbox
-              images={images}
-              allowRotate={false}
-              style={{height: '100vh'}}
-              onClose={() => setState({ isOpen: false })}
-              startIndex={state.selectedImg}
-              keyboardInteraction={true}
-            />
-          )}
+          <Lightbox
+            images={images}
+            allowRotate={false}
+            style={{ height: "100vh" }}
+            onClose={() => setState({ isOpen: false })}
+            startIndex={state.selectedImg}
+            keyboardInteraction={true}
+          />
+        )}
         <span>
           {" "}
           آدرس سایـــــــت: (در حال توسعه)
