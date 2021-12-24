@@ -181,9 +181,9 @@ li.different:hover {
   border: none;
 }
 
-li:hover {
+/* li:hover {
   border-bottom: 3px solid #ffffff;
-}
+} */
 
 .different::after {
   content: "";
@@ -219,7 +219,7 @@ li:hover {
   /* border: 3px solid hotpink; */
   width: 55%;
   min-width: 320px;
-  padding: 40px 80px;
+  padding: 40px 40px;
 }
 
 .r {
@@ -235,6 +235,7 @@ li:hover {
 .r h1 {
   width: 100%;
   /* background-color: red; */
+  padding: 0px 20px;
 }
 
 .resumeCard {
@@ -286,6 +287,7 @@ li:hover {
   box-shadow: 0px 2.3px 2px 2px rgb(221, 218, 218);
   z-index: 200;
   padding-right: 20px;
+  padding-left: 20px;
   opacity: 0.95;
   min-width: 330px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
@@ -544,9 +546,9 @@ li:hover {
   margin-top: 5px;
   color: rgb(0, 20, 7);
   width: fit-content;
-  animation: animate 2s linear 1 alternate-reverse;
+  /* animation: animate 2s linear 1 alternate-reverse; */
   background: linear-gradient(90deg, #000, #000, #000);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: 80%;
   -webkit-background-clip: text;
   /* background-clip: content-box; */
@@ -823,7 +825,7 @@ li:hover {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: calc(50% - 200px / 2);
+  top: calc(50% - 150px / 2);
   right: 60%;
   background: #fff;
   border-radius: 50%;
@@ -855,7 +857,7 @@ li:hover {
   cursor: -moz-grab;
   position: absolute;
   top: calc(50% - 200px / 2);
-  left: calc(50% - 10px / 2);
+  left: calc(50% - 200px / 2);
   background: #fff;
   border-radius: 50%;
 }
@@ -869,8 +871,8 @@ li:hover {
   cursor: grab;
   cursor: -moz-grab;
   position: absolute;
-  top: calc(50% - 0px / 2);
-  left: calc(10% - 180px / 2);
+  top: calc(50% - 160px / 2);
+  left: calc(10% - 190px / 2);
   background: #fff;
   border-radius: 50%;
 }
@@ -980,7 +982,8 @@ li:hover {
   height: 15vh;
   animation: logoSpin 15s alternate 0s infinite;
   border-radius: 30px;
-  bottom: 25%;
+  bottom: 22%;
+
   right: 10%;
 }
 
@@ -1360,7 +1363,48 @@ footer {
   }
 }
 
+.globe:hover .languages {
+  height: 100px;
+}
+.globe {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+}
+.languages {
+  flex-wrap: wrap;
+  position: absolute;
+  width: 85px;
+  top: 50px;
+  right: 0px;
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #fff;
+  border-radius: 0px 0 8px 8px;
+}
+.langButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  background: transparent;
+  align-items: center;
+  outline: none;
+  border: none;
+  padding: 4px;
+}
+.langButton:hover {
+  background-color: rgb(153, 153, 153);
+}
+
 @media screen and (max-width: 700px) {
+  .globe {
+    position: absolute;
+    top: 50px;
+    right: 1px;
+  }
+
   .lb-show-mobile {
     display: flex !important;
     direction: ltr !important;
@@ -1429,7 +1473,11 @@ footer {
   }
   #resume {
     box-shadow: 0px 0px 0px 0px black;
-    padding-right: 45px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .resumeCard div {
     max-width: 320px !important;

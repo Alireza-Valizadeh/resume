@@ -9,10 +9,11 @@ import { useHistory } from "react-router";
 import { useEffect } from "react";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
-
+import { useTranslation, useLocalization } from "./Localization";
 export default function Taxi1830(props) {
   const history = useHistory();
-
+  const { languages, language, setLanguage } = useLocalization();
+  const t = useTranslation();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlDriverImg1,
@@ -20,12 +21,12 @@ export default function Taxi1830(props) {
     isOpen: false,
   });
   const images = [
-    { url: adlDriverImg1, title: "صفحه ورود" },
-    { url: adlDriverImg2, title: "ثبت سفر " },
-    { url: adlDriverImg3, title: "آدرس های ثبت شده" },
-    { url: adlDriverImg4, title: "محدوده ایستگاه ها" },
-    { url: adlDriverImg5, title: "  تلفن آنلاین " },
-    { url: adlDriverImg6, title: "جستجوی سفر ها" },
+    { url: adlDriverImg1, title: t("login_page") },
+    { url: adlDriverImg2, title: t("registering_trip") },
+    { url: adlDriverImg3, title: t("registered_addresses") },
+    { url: adlDriverImg4, title: t("stations_radius") },
+    { url: adlDriverImg5, title: t("online_phone") },
+    { url: adlDriverImg6, title: t("searching_trip") },
   ];
 
   const buttons = [1, 2, 3, 4, 5, 6];
@@ -37,7 +38,10 @@ export default function Taxi1830(props) {
   }, []);
 
   return (
-    <div className="mainWrapper">
+    <div
+      className="mainWrapper"
+      style={{ direction: language != "fa" ? "ltr" : "rtl" }}
+    >
       <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
         {" "}
       </div>
@@ -49,8 +53,8 @@ export default function Taxi1830(props) {
           sandbox="allow-scripts allow-same-origin"
         ></iframe> */}
         <header>
-          <h3> آژانس 1830 مشهد </h3>
-          <h4>پنل اپراتور تلفن و بیسیم</h4>
+          <h3> {t("1830")}</h3>
+          <h4>{t("panel_operator")}</h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <div className="album">
@@ -80,30 +84,20 @@ export default function Taxi1830(props) {
           />
         )}
         <span>
-          {" "}
-          آدرس سایـــــــت:{" "}
-          <a href="https://panel1830.ir" target="_blank" rel="noreferrer">
+          {t("website_address")}
+          <a
+            href="https://panel1830.ir"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textAlign: language != "fa" ? "right" : "left" }}
+          >
             {" "}
             https://panel1830.ir{" "}
           </a>
         </span>
-        <p className="description">
-          این پنل برای ثبت سفر تاکسی 1830 مشهد طراحی شده است که اپراتور ها با آن
-          می توانند سفر های موجود را ثبت یا پیگیری کنند.
-        </p>
-        <p className="description">
-          در این پروژه من بخش هایی که ایراد داشت (ثبت سفر و یا بخش آدرس های اخیر
-          مشتری) را رفع ایراد کردم و بخش های جدیدی نیز به پروژه افزودم. از جمله
-          این بخش ها می توان به اضافه شدن کپچا، دریافت شماره تماس گیرنده و پر
-          شدن فرم بر اساس اطلاعات موجود از مشتری، بخش کنسلی سرویس ها و از همه
-          مهم تر تماس اینترنتی در محیط وب در همان صفحه با استفاده از SIP و
-          ارتباط این بخش با سرور، ارسال متن صوتی تماس مشتری با اپراتور برای
-          راننده و موارد دیگر اشاره کرد.
-        </p>
-        <p className="description">
-          تمامی این بخش ها به صورت فول استک یعنی هم بخش React و هم بخش ASP.NET و
-          SQL Server توسط من انجام شده است
-        </p>
+        <p className="description">{t("1830_p1")}</p>
+        <p className="description">{t("1830_p2")}</p>
+        <p className="description">{t("1830_p3")}</p>
         <br />
         <hr />
       </div>

@@ -22,7 +22,7 @@ import TaxiCountry from "./Components/TaxiCountry";
 import Englishhob from "./Components/englishhob";
 import Zoshk from "./Components/zoshk";
 import Taxi1830 from "./Components/taxi1830";
-
+import { LocalizationProvider } from "./Components/Localization";
 function App() {
   // const location = useLocation();
   const routes = [
@@ -40,20 +40,22 @@ function App() {
     { path: "/taxi1830", component: Taxi1830 },
   ];
   return (
-    <Router basename={window.location.pathname || ""}>
-      <Switch>
-        {/* <SlideRoutes > */}
-        {routes.map((route, index) => (
-          <Route
-            key={index}
-            exact
-            component={route.component}
-            path={route.path}
-          />
-        ))}
-        {/* </SlideRoutes> */}
-      </Switch>
-    </Router>
+    <LocalizationProvider>
+      <Router basename={window.location.pathname || ""}>
+        <Switch>
+          {/* <SlideRoutes > */}
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              exact
+              component={route.component}
+              path={route.path}
+            />
+          ))}
+          {/* </SlideRoutes> */}
+        </Switch>
+      </Router>
+    </LocalizationProvider>
   );
 }
 

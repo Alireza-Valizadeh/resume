@@ -11,94 +11,99 @@ import taxi from "../static/taxi.png";
 import englishhob from "../static/englishhob.png";
 import order from "../static/order.png";
 import taxi1830 from "../static/1830.png";
+import { useTranslation, useLocalization } from "./Localization";
 export default function Resume() {
+  const t = useTranslation();
+  const { languages, language, setLanguage } = useLocalization();
   return (
     <div className="r">
-      <h1> نمونه کارها </h1>
+      <h1 style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+        {t("resume")}{" "}
+      </h1>
       <ResumeCard
         img={order}
-        firstTitle={"رب زشک خراسان"}
-        secondTitle={"پنل مدیریت سفارشات"}
+        firstTitle={t("zoshk")}
+        secondTitle={t("zoshk_panel")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
         link={"/zoshk"}
       />
       <ResumeCard
         img={taxi1830}
-        firstTitle={"آژانس 1830 مشهد"}
-        secondTitle={"پنل اپراتور تلفن و بیسیم"}
+        firstTitle={t("1830")}
+        secondTitle={t("panel_operator")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
         link={"/taxi1830"}
       />
       <ResumeCard
         img={adlDriver}
-        firstTitle={"شرکت باربری عدل ترابران توس"}
-        secondTitle={"پنل باربری صاحب کالا"}
+        firstTitle={t("adl_tarabar")}
+        secondTitle={t("adl_customer_panel")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
         link={"/adltarabaranCustomerPanel"}
       />
       <ResumeCard
         img={adlCustomer}
-        firstTitle={"شرکت باربری عدل ترابران توس"}
-        secondTitle={"پنل باربری راننده"}
+        firstTitle={t("adl_tarabar")}
+        secondTitle={t("adl_driver_panel")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
         link={"/adltarabaranDriverPanel"}
       />
       <ResumeCard
         img={adlCmr}
-        firstTitle={"شرکت باربری عدل ترابران توس"}
-        secondTitle={"پنل باربری شرکت حمل و نقل"}
+        firstTitle={t("adl_tarabar")}
+        secondTitle={t("adl_cmr_panel")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}
         show={true}
         link={"/adltarabaranCmrPanel"}
       />
       <ResumeCard
         img={webApp}
-        firstTitle={"تاکسی ابتکار"}
-        secondTitle={"وب اپلیکیشن تاکسی ابتکار"}
+        firstTitle={t("taxi_ebtekar")}
+        secondTitle={t("ebtekar_web_app")}
         thirdTitle={"Node.js - React.js - SQL Server"}
         show={true}
         link={"/webApplicationTaxi"}
       />
       <ResumeCard
         img={fahrzeugAdmin}
-        firstTitle={"شرکت آلمانی Fahrzeug"}
-        secondTitle={"پنل ادمین"}
+        firstTitle={t("fahrzeug")}
+        secondTitle={t("fahrzeug_admin")}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
         link={"/fahrzeugAdmin"}
       />
       <ResumeCard
         img={fahrzeug}
-        firstTitle={"شرکت آلمانی Fahrzeug"}
-        secondTitle={"پنل کاربری"}
+        firstTitle={t("fahrzeug")}
+        secondTitle={t("fahrzeug_user")}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
         link={"/fahrzeug"}
       />
       <ResumeCard
         img={taxi}
-        firstTitle={"شرکت ابتکار فناوران"}
-        secondTitle={" پروژه مدیریت آژانس در کل کشور "}
+        firstTitle={t("efspco")}
+        secondTitle={t("taxi_country")}
         thirdTitle={"Node.js - React.js - SQL Server - MongoDB"}
         show={true}
         link={"/taxiCountry"}
       />
       <ResumeCard
         img={avidMain}
-        firstTitle={" استارتاپ آوید"}
-        secondTitle={"شبکه اجتماعی آوید"}
+        firstTitle={t("avid_startup")}
+        secondTitle={t("avid_social_media")}
         thirdTitle={"Node.js - Flutter - MySQL"}
         show={true}
         link={"/avid"}
       />
       <ResumeCard
         img={englishhob}
-        firstTitle={" موسسه آموزش زبان انگلیش هاب"}
-        secondTitle={"سایت و پنل زبان آموزان"}
+        firstTitle={t("englishhob")}
+        secondTitle={t("englishhob_site")}
         thirdTitle={"Node.js - React.js - MySQL"}
         show={true}
         link={"/Englishhob"}

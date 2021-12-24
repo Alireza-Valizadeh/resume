@@ -9,9 +9,11 @@ import { useHistory } from "react-router";
 import { useEffect } from "react";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
-
+import { useTranslation, useLocalization } from "./Localization";
 export default function AdlCustomer(props) {
   const history = useHistory();
+  const { languages, language, setLanguage } = useLocalization();
+  const t = useTranslation();
   const [state, setState] = useState({
     activeSlider: 1,
     activeImageUrl: adlCustomerImg1,
@@ -20,12 +22,12 @@ export default function AdlCustomer(props) {
   });
   const buttons = [1, 2, 3, 4, 5, 6];
   const images = [
-    { url: adlCustomerImg3, title: "ثبت بار " },
-    { url: adlCustomerImg2, title: "جستجوی نشان" },
-    { url: adlCustomerImg1, title: "  ثبت بار " },
-    { url: adlCustomerImg4, title: "گزارش گردش حساب" },
-    { url: adlCustomerImg5, title: "اطلاعات کاربر" },
-    { url: adlCustomerImg6, title: "بار های من" },
+    { url: adlCustomerImg3, title: t("registering_loads_2") },
+    { url: adlCustomerImg2, title: t("search_map") },
+    { url: adlCustomerImg1, title: t("registering_loads_1") },
+    { url: adlCustomerImg4, title: t("turnover_report") },
+    { url: adlCustomerImg5, title: t("profile_info") },
+    { url: adlCustomerImg6, title: t("my_loads") },
   ];
   const zoom = useRef();
 
@@ -34,14 +36,17 @@ export default function AdlCustomer(props) {
   }, []);
 
   return (
-    <div className="mainWrapper">
+    <div
+      className="mainWrapper"
+      style={{ direction: language != "fa" ? "ltr" : "rtl" }}
+    >
       <div className="button-up" onClick={() => history.push("/#")} ref={zoom}>
         {" "}
       </div>
       <div className="main">
         <header>
-          <h3> شرکت باربری عدل ترابران توس </h3>
-          <h4>پنل باربری صاحب کالا </h4>
+          <h3> {t("adl_tarabar")} </h3>
+          <h4> {t("adl_customer_panel")} </h4>
           <h5> ASP.NET - React.js - SQL Server</h5>
         </header>
         <div className="album">
@@ -71,60 +76,44 @@ export default function AdlCustomer(props) {
           />
         )}
         <span>
-          {" "}
-          آدرس سایـــــــت:{" "}
+          {t("website_address")}
           <a
             href="http://adltarabaran.efspco.ir:8016"
             target="_blank"
             rel="noreferrer"
+            style={{ textAlign: language != "fa" ? "right" : "left" }}
           >
             {" "}
             https://adltarabaran.efspco.ir{" "}
           </a>
         </span>
         <span>
-          {" "}
-          آدرس سایـــــــت:{" "}
+          {t("website_address")}
           <a
             href="http://noorinet.efspco.ir:2005"
             target="_blank"
             rel="noreferrer"
+            style={{ textAlign: language != "fa" ? "right" : "left" }}
           >
             {" "}
             https://noorinet.efspco.ir{" "}
           </a>
         </span>
         <span>
-          {" "}
-          آدرس سایـــــــت:{" "}
+          {t("website_address")}
           <a
             href="http://kalaran.efspco.ir:3000"
             target="_blank"
             rel="noreferrer"
+            style={{ textAlign: language != "fa" ? "right" : "left" }}
           >
             {" "}
             https://kalaran.efspco.ir{" "}
           </a>
         </span>
-        <p className="description">
-          این پنل برای مشتریان شرکت ایجاد شده است تا در محیط وب بار های موجود
-          خود را در سامانه ثبت کنند و با اشراف کامل بر فرایند قیمت گزاری و حمل
-          بار، بار خود را در مقصد صحیح و سالم از راننده تحویل بگیرند
-        </p>
-        <p className="description">
-          در این پروژه من توسعه بخش های جستجوی نقشه، احراز هویت صاحب کالا
-          validation اطلاعات ثبت شده در فرم های مختلف سایت (از جمله ثبت اطلاعات
-          شخص حقوقی و حقیقی، ثبت مشخصات بار و ...)، اضافه شدن بخش نمایش حواله و
-          بارنامه در صفحه بار ها، اضافه شدن نوع دسته بندی بار هنگام ثبت، رفع
-          ایرادات موجود و... را به عهده داشتم. موارد فوق به صورت Full-stack
-          انجام شده و تمامی Procedure ها و webservice های لازم را نیز ایجاد و
-          ویرایش کردم.
-        </p>
-        <p className="description">
-          این پنل برای 3 شرکت "باربری نوریــ نت" ، "باربری عدل ترابر" و "باربری
-          کالاران رهنگار" اعمال شده است که شرکت های نورینت و عدل ترابر نیز مجوز
-          رسمی پنل را از وزارتخانه مربوطه دریافت کردند.
-        </p>
+        <p className="description">{t("adlc_p1")}</p>
+        <p className="description">{t("adlc_p2")}</p>
+        <p className="description">{t("adlc_p3")}</p>
         <br />
         <hr />
       </div>

@@ -2,55 +2,32 @@ import React, { useState, useEffect, useRef } from "react";
 import Jobs from "./Jobs";
 import Resume from "./Resume";
 import { motion } from "framer-motion";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import globe from "../static/globe-bg.png";
+import { useTranslation, useLocalization } from "./Localization";
 export default function Homepage() {
+  const t = useTranslation();
   const [state, setState] = useState({
     isScrolled: false,
     activeAboutMe: 1,
+    showLangDD: false,
   });
-  const AboutMes = [
-    {
-      firstTitle: " اسم من1 ",
-      secondTitle: "علیرضا ولی زاده است",
-      paragraph:
-        "من یک برنامه نویس Full-stack در بخش وب و هم چنین دارای مدرک کارشناسی مهندسی عمران از دانشگاه فردوسی مشهد هستم",
-    },
-    {
-      firstTitle: " اسم من 2",
-      secondTitle: "2علیرضا ولی زاده است",
-      paragraph:
-        "من یک برنامه نویس Full-stack در بخش وب و هم چنین دارای مدرک کارشناسی مهندسی عمران از دانشگاه فردوسی مشهد هستم",
-    },
-    {
-      firstTitle: " اسم من3 ",
-      secondTitle: "3علیرضا ولی زاده است",
-      paragraph:
-        "من یک برنامه نویس Full-stack در بخش وب و هم چنین دارای مدرک کارشناسی مهندسی عمران از دانشگاه فردوسی مشهد هستم",
-    },
-  ];
-  const interval = setInterval(() => {
-    setState((prevState) => ({
-      ...prevState,
-      activeAboutMe:
-        state.activeAboutMe === AboutMes.length - 1
-          ? 0
-          : state.activeAboutMe + 1,
-    }));
-    clearInterval(interval);
-  }, 5000);
-
+  const { languages, language, setLanguage } = useLocalization();
+  const languageList = Object.entries(languages).map((values) => ({
+    code: values[0],
+    name: values[1].name,
+  }));
   const navLinks = [
     {
       link: "/resume/#",
-      title: "مهارت ها",
+      title: t("skills"),
     },
     {
       link: "/resume/#resume",
-      title: "نمونه کار ها",
+      title: t("resume"),
     },
     {
       link: "/resume/#jobs",
-      title: "سابقه شغلی",
+      title: t("jobs"),
     },
   ];
   let handleShow = (boolean) => {
@@ -115,14 +92,38 @@ export default function Homepage() {
               <motion.div drag dragConstraints={csharp} className="csharp" />
             </motion.div>
           </div>
-
-          {/* <div className="mysql"></div> */}
-          {/* <div className="node"></div>
-          <div className="mongo"></div> */}
           <section id="home">
             <nav>
-              <div id="wrapper">
+              <div
+                id="wrapper"
+                // style={{ direction: language != "fa" ? "ltr" : "rtl" }}
+              >
                 <ul>
+                  <div className="globe">
+                    <img src={globe} />
+                    <div className="languages">
+                      {languageList.map((it) => (
+                        <button
+                          className="langButton"
+                          key={it.code}
+                          value={it.code}
+                          onClick={(e) => setLanguage(it.code)}
+                        >
+                          {it.name}
+                          {it.code === "fa" && (
+                            <img src="https://img.icons8.com/fluency/20/000000/iran-circular.png" />
+                          )}
+                          {it.code === "de" && (
+                            <img src="https://img.icons8.com/fluency/20/000000/germany-circular.png" />
+                          )}
+                          {it.code === "en" && (
+                            <img src="https://img.icons8.com/color/20/000000/great-britain-circular.png" />
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
                   {navLinks.map((item, index) => (
                     <li className="different" key={index * 13}>
                       <a href={item.link} key={index}>
@@ -135,18 +136,14 @@ export default function Homepage() {
                 </ul>
               </div>
             </nav>
-            {/* <div className="about-me">
-              <h2> {AboutMes[state.activeAboutMe].firstTitle} </h2>
-              <h1> {AboutMes[state.activeAboutMe].secondTitle} </h1>
-              <br />
-              <p> {AboutMes[state.activeAboutMe].paragraph} </p>
-              <ProgressCircles isActive={state.activeAboutMe} />
-            </div> */}
           </section>
         </div>
       </div>
       <div className="resumeWrapper">
-        <section id="resume">
+        <section
+          id="resume"
+          style={{ paddingRight: language != "fa" ? "5px" : "45px" }}
+        >
           <Resume />
         </section>
       </div>
