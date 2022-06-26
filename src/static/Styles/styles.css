@@ -71,8 +71,8 @@
 }
 
 * {
-  font-family: "Vazir";
-  font-family: Vazir;
+  font-family: "Vazir",  Arial, Helvetica, sans-serif;
+  font-family: Vazir, Arial, Helvetica, sans-serif;
 }
 
 .homePage {

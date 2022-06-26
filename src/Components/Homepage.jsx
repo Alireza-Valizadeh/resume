@@ -150,7 +150,7 @@ export default function Homepage() {
       <section id="jobs">
         <Jobs />
       </section>
-
+{/* 
       {state.isScrolled ? (
         <button className="scrollButton" onClick={() => backToTop()}>
           <lord-icon
@@ -160,7 +160,7 @@ export default function Homepage() {
             style={{ width: "35px", height: "35px" }}
           ></lord-icon>
         </button>
-      ) : null}
+      ) : null} */}
       {/* <footer>
         <AiFillGithub size={45} color={"#666"} />
         <AiFillLinkedin size={45} color={"#666"} />

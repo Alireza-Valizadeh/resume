@@ -22,6 +22,14 @@ export default function Resume() {
       </h1>
       <ResumeCard
         img={order}
+        firstTitle={t("glo3d")}
+        secondTitle={t("glo3d_pricing")}
+        thirdTitle={"Node.js - Firebase - Stripe"}
+        show={true}
+        link={"/Glo3D-pricing"}
+      />
+      <ResumeCard
+        img={order}
         firstTitle={t("zoshk")}
         secondTitle={t("zoshk_panel")}
         thirdTitle={"ASP.NET - React.js - SQL Server"}

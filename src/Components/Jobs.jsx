@@ -21,7 +21,7 @@ export default function Jobs() {
         </div>
         <div className="actualJob">
           <h4>
-            <a href="https://goo.gl/maps/VMgpJqVv5TasGjcL8" target="_blank">
+            <a href="http://efspco.ir" target="_blank">
               {" "}
               {t("efspco")}{" "}
             </a>
@@ -171,7 +171,7 @@ export default function Jobs() {
         </div>
         <div className="actualJob">
           <h4>
-            <a href="https://goo.gl/maps/WtpByjBXWtJFjGt28" target="_blank">
+            <a href="https://glo3d.com" target="_blank">
               {t("glo3d")}
             </a>
           </h4>

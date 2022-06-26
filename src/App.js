@@ -23,6 +23,7 @@ import Englishhob from "./Components/englishhob";
 import Zoshk from "./Components/zoshk";
 import Taxi1830 from "./Components/taxi1830";
 import { LocalizationProvider } from "./Components/Localization";
+import Glo3dPricing from "./Components/glo3dPricing";
 function App() {
   // const location = useLocation();
   const routes = [
@@ -38,6 +39,7 @@ function App() {
     { path: "/Englishhob", component: Englishhob },
     { path: "/zoshk", component: Zoshk },
     { path: "/taxi1830", component: Taxi1830 },
+    { path: "/Glo3D-pricing", component: Glo3dPricing },
   ];
   return (
     <LocalizationProvider>
