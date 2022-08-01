@@ -16,6 +16,7 @@ body {
 * {
   scroll-behavior: smooth;
   margin: 0;
+  font-family: "black Times New Roman";
 }
 
 code {

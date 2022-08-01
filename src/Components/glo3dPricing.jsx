@@ -87,30 +87,6 @@ export default function Glo3dPricing(props) {
             https://Glo3D.net/pricing{" "}
           </a>
         </span>
-        <span>
-          {t("website_address")}
-          <a
-            href="https://glo3dapp.com/360-product-photography-pricing/"
-            target="_blank"
-            rel="noreferrer"
-            style={{ textAlign: language != "fa" ? "right" : "left" }}
-          >
-            {" "}
-            https://glo3dapp.com/360-product-photography-pricing/{" "}
-          </a>
-        </span>
-        <span>
-          {t("website_address")}
-          <a
-            href="http://kalaran.efspco.ir:3000"
-            target="_blank"
-            rel="noreferrer"
-            style={{ textAlign: language != "fa" ? "right" : "left" }}
-          >
-            {" "}
-            https://kalaran.efspco.ir{" "}
-          </a>
-        </span>
         <p className="description">{t("adlc_p1")}</p>
         <p className="description">{t("adlc_p2")}</p>
         <p className="description">{t("adlc_p3")}</p>

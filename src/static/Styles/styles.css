@@ -1,71 +1,71 @@
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-WOL.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Bold-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-Bold-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-Bold-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Bold-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-Bold-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-Bold-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-Bold-WOL.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Black-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-Black-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-Black-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Black-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-Black-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-Black-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-Black-WOL.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-Medium-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-Medium-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Medium-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-Medium-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-Medium-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-Medium-WOL.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Light-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-Light-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-Light-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Light-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-Light-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-Light-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-Light-WOL.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot");
-  src: url("../fonts/Farsi-Digits/Vazir-Thin-FD.eot?#iefix")
+  src: url("../fonts/Without-Latin/Vazir-Thin-WOL.eot");
+  src: url("../fonts/Without-Latin/Vazir-Thin-WOL.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff2") format("woff2"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.woff") format("woff"),
-    url("../fonts/Farsi-Digits/Vazir-Thin-FD.ttf") format("truetype");
+    url("../fonts/Without-Latin/Vazir-Thin-WOL.woff2") format("woff2"),
+    url("../fonts/Without-Latin/Vazir-Thin-WOL.woff") format("woff"),
+    url("../fonts/Without-Latin/Vazir-Thin-WOL.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -300,6 +300,15 @@ li.different:hover {
 .s {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.43s;
   transition-delay: 200ms;
+}
+.social {
+  margin-right: 8px;
+  border: 0;
+  transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.social:hover {
+  transform: scale3d(0.8, 0.8, 0.8);
 }
 
 .resumeCard:hover {
@@ -553,7 +562,7 @@ li.different:hover {
   -webkit-background-clip: text;
   /* background-clip: content-box; */
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  font-family: Vazir, "Courier New", Courier, monospace;
+  /* font-family: Vazir, "Courier New", Courier, monospace; */
 }
 .actualJob ul {
   list-style: none;
@@ -1369,7 +1378,10 @@ footer {
 .globe {
   position: absolute;
   top: 0px;
+  background: url("../switch.svg");
   right: 1px;
+  width: 50px;
+  height: 50px;
 }
 .languages {
   flex-wrap: wrap;

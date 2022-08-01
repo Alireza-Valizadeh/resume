@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import Jobs from "./Jobs";
 import Resume from "./Resume";
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import { motion } from "framer-motion";
-import globe from "../static/globe-bg.png";
+import globe from "../static/switch.svg";
 import { useTranslation, useLocalization } from "./Localization";
+import Socials from "./Socials";
 export default function Homepage() {
   const t = useTranslation();
   const [state, setState] = useState({
@@ -61,6 +63,7 @@ export default function Homepage() {
   const csharp = useRef(null);
   return (
     <>
+      
       <div className="homePage">
         <div className="bg-home">
           <div className="example-container">
@@ -100,14 +103,24 @@ export default function Homepage() {
               >
                 <ul>
                   <div className="globe">
-                    <img src={globe} />
                     <div className="languages">
                       {languageList.map((it) => (
                         <button
                           className="langButton"
                           key={it.code}
                           value={it.code}
-                          onClick={(e) => setLanguage(it.code)}
+                          onClick={(e) => {
+                            setLanguage(it.code);
+                            if (it.code === "fa") {
+                              console.log("worked");
+                              document.querySelector("body").style.fontFamily =
+                                "Vazir";
+                            } else {
+                              console.log("worked");
+                              document.querySelector("body").style.fontFamily =
+                                "system-ui";
+                            }
+                          }}
                         >
                           {it.name}
                           {it.code === "fa" && (
@@ -150,7 +163,7 @@ export default function Homepage() {
       <section id="jobs">
         <Jobs />
       </section>
-{/* 
+      {/* 
       {state.isScrolled ? (
         <button className="scrollButton" onClick={() => backToTop()}>
           <lord-icon
@@ -161,10 +174,7 @@ export default function Homepage() {
           ></lord-icon>
         </button>
       ) : null} */}
-      {/* <footer>
-        <AiFillGithub size={45} color={"#666"} />
-        <AiFillLinkedin size={45} color={"#666"} />
-      </footer> */}
+{/* <Socials/> */}
     </>
   );
 }
