@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.1358b950.chunk.css",
-    "main.js": "/resume/static/js/main.51d7b6c6.chunk.js",
-    "main.js.map": "/resume/static/js/main.51d7b6c6.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.77c979b8.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.77c979b8.js.map",
+    "main.css": "/resume/static/css/main.c48ce619.chunk.css",
+    "main.js": "/resume/static/js/main.bb6115f4.chunk.js",
+    "main.js.map": "/resume/static/js/main.bb6115f4.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.20822609.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.20822609.js.map",
     "static/css/2.07e018fc.chunk.css": "/resume/static/css/2.07e018fc.chunk.css",
-    "static/js/2.275463b5.chunk.js": "/resume/static/js/2.275463b5.chunk.js",
-    "static/js/2.275463b5.chunk.js.map": "/resume/static/js/2.275463b5.chunk.js.map",
-    "static/js/3.3166f751.chunk.js": "/resume/static/js/3.3166f751.chunk.js",
-    "static/js/3.3166f751.chunk.js.map": "/resume/static/js/3.3166f751.chunk.js.map",
+    "static/js/2.52e8c187.chunk.js": "/resume/static/js/2.52e8c187.chunk.js",
+    "static/js/2.52e8c187.chunk.js.map": "/resume/static/js/2.52e8c187.chunk.js.map",
+    "static/js/3.324328d6.chunk.js": "/resume/static/js/3.324328d6.chunk.js",
+    "static/js/3.324328d6.chunk.js.map": "/resume/static/js/3.324328d6.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.07e018fc.chunk.css.map": "/resume/static/css/2.07e018fc.chunk.css.map",
-    "static/css/main.1358b950.chunk.css.map": "/resume/static/css/main.1358b950.chunk.css.map",
-    "static/js/2.275463b5.chunk.js.LICENSE.txt": "/resume/static/js/2.275463b5.chunk.js.LICENSE.txt",
+    "static/css/main.c48ce619.chunk.css.map": "/resume/static/css/main.c48ce619.chunk.css.map",
+    "static/js/2.52e8c187.chunk.js.LICENSE.txt": "/resume/static/js/2.52e8c187.chunk.js.LICENSE.txt",
     "static/media/1830.17ea7927.png": "/resume/static/media/1830.17ea7927.png",
     "static/media/18301.da62d9c8.png": "/resume/static/media/18301.da62d9c8.png",
     "static/media/18302.31b3a00f.png": "/resume/static/media/18302.31b3a00f.png",
@@ -96,10 +96,10 @@
     "static/media/webApp6.15b7d0d7.png": "/resume/static/media/webApp6.15b7d0d7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.77c979b8.js",
+    "static/js/runtime-main.20822609.js",
     "static/css/2.07e018fc.chunk.css",
-    "static/js/2.275463b5.chunk.js",
-    "static/css/main.1358b950.chunk.css",
-    "static/js/main.51d7b6c6.chunk.js"
+    "static/js/2.52e8c187.chunk.js",
+    "static/css/main.c48ce619.chunk.css",
+    "static/js/main.bb6115f4.chunk.js"
   ]
 }
