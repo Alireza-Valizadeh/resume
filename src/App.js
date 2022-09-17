@@ -1,10 +1,8 @@
 import React from "react";
-import SlideRoutes from "react-slide-routes";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
 } from "react-router-dom";
 
 import "./App.css";
@@ -45,7 +43,6 @@ function App() {
     <LocalizationProvider>
       <Router basename={window.location.pathname || ""}>
         <Switch>
-          {/* <SlideRoutes > */}
           {routes.map((route, index) => (
             <Route
               key={index}
@@ -54,7 +51,6 @@ function App() {
               path={route.path}
             />
           ))}
-          {/* </SlideRoutes> */}
         </Switch>
       </Router>
     </LocalizationProvider>
