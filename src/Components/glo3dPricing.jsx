@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import adlCustomerImg1 from "../static/adlCustomer2.png";
-import adlCustomerImg2 from "../static/adlCustomer1.png";
-import adlCustomerImg3 from "../static/adlCustomer3.png";
-import adlCustomerImg4 from "../static/adlCustomer4.png";
-import adlCustomerImg5 from "../static/adlCustomer5.png";
-import adlCustomerImg6 from "../static/adlCustomer6.png";
+import adlCustomerImg1 from "../static/gPricing.png";
+import adlCustomerImg2 from "../static/gPricing2.png";
+import adlCustomerImg3 from "../static/gPricing3.png";
+import adlCustomerImg4 from "../static/gPricing4.png";
+import adlCustomerImg5 from "../static/gPricing5.png";
+import adlCustomerImg6 from "../static/gPricing6.png";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
 import Lightbox from "react-awesome-lightbox";
@@ -12,7 +12,7 @@ import "react-awesome-lightbox/build/style.css";
 import { useTranslation, useLocalization } from "./Localization";
 export default function Glo3dPricing(props) {
   const history = useHistory();
-  const { languages, language, setLanguage } = useLocalization();
+  const { language } = useLocalization();
   const t = useTranslation();
   const [state, setState] = useState({
     activeSlider: 1,
