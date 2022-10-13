@@ -614,6 +614,13 @@ li.different:hover {
   margin-top: 25px;
   color: #888;
 }
+.description-features {
+  line-height: 30px;
+  text-align: justify;
+  width: 100%;
+  margin-top: 25px;
+  color: #888;
+}
 
 .main span {
   text-align: right;

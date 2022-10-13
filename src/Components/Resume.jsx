@@ -10,6 +10,7 @@ import avidMain from "../static/avidMain.png";
 import taxi from "../static/taxi.png";
 import englishhob from "../static/englishhob.png";
 import order from "../static/order.png";
+import gloPricing from "../static/gPricing2.png";
 import taxi1830 from "../static/1830.png";
 import { useTranslation, useLocalization } from "./Localization";
 export default function Resume() {
@@ -21,7 +22,7 @@ export default function Resume() {
         {t("resume")}{" "}
       </h1>
       <ResumeCard
-        img={order}
+        img={gloPricing}
         firstTitle={t("glo3d")}
         secondTitle={t("glo3d_pricing")}
         thirdTitle={"Node.js - Firebase - Stripe"}
