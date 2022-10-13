@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.c48ce619.chunk.css",
-    "main.js": "/resume/static/js/main.bb6115f4.chunk.js",
-    "main.js.map": "/resume/static/js/main.bb6115f4.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.20822609.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.20822609.js.map",
+    "main.css": "/resume/static/css/main.cba50499.chunk.css",
+    "main.js": "/resume/static/js/main.07da0d25.chunk.js",
+    "main.js.map": "/resume/static/js/main.07da0d25.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.77c979b8.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.77c979b8.js.map",
     "static/css/2.07e018fc.chunk.css": "/resume/static/css/2.07e018fc.chunk.css",
-    "static/js/2.52e8c187.chunk.js": "/resume/static/js/2.52e8c187.chunk.js",
-    "static/js/2.52e8c187.chunk.js.map": "/resume/static/js/2.52e8c187.chunk.js.map",
-    "static/js/3.324328d6.chunk.js": "/resume/static/js/3.324328d6.chunk.js",
-    "static/js/3.324328d6.chunk.js.map": "/resume/static/js/3.324328d6.chunk.js.map",
+    "static/js/2.c7ef2302.chunk.js": "/resume/static/js/2.c7ef2302.chunk.js",
+    "static/js/2.c7ef2302.chunk.js.map": "/resume/static/js/2.c7ef2302.chunk.js.map",
+    "static/js/3.3166f751.chunk.js": "/resume/static/js/3.3166f751.chunk.js",
+    "static/js/3.3166f751.chunk.js.map": "/resume/static/js/3.3166f751.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.07e018fc.chunk.css.map": "/resume/static/css/2.07e018fc.chunk.css.map",
-    "static/css/main.c48ce619.chunk.css.map": "/resume/static/css/main.c48ce619.chunk.css.map",
-    "static/js/2.52e8c187.chunk.js.LICENSE.txt": "/resume/static/js/2.52e8c187.chunk.js.LICENSE.txt",
+    "static/css/main.cba50499.chunk.css.map": "/resume/static/css/main.cba50499.chunk.css.map",
+    "static/js/2.c7ef2302.chunk.js.LICENSE.txt": "/resume/static/js/2.c7ef2302.chunk.js.LICENSE.txt",
     "static/media/1830.17ea7927.png": "/resume/static/media/1830.17ea7927.png",
     "static/media/18301.da62d9c8.png": "/resume/static/media/18301.da62d9c8.png",
     "static/media/18302.31b3a00f.png": "/resume/static/media/18302.31b3a00f.png",
@@ -73,6 +73,12 @@
     "static/media/fahrzeugAdmin4.d70cd3bc.png": "/resume/static/media/fahrzeugAdmin4.d70cd3bc.png",
     "static/media/fahrzeugAdmin5.15c6144f.png": "/resume/static/media/fahrzeugAdmin5.15c6144f.png",
     "static/media/fahrzeugAdmin6.4165101a.png": "/resume/static/media/fahrzeugAdmin6.4165101a.png",
+    "static/media/gPricing.4bd6940d.png": "/resume/static/media/gPricing.4bd6940d.png",
+    "static/media/gPricing2.3c35119c.png": "/resume/static/media/gPricing2.3c35119c.png",
+    "static/media/gPricing3.c486874b.png": "/resume/static/media/gPricing3.c486874b.png",
+    "static/media/gPricing4.a2db9ec5.png": "/resume/static/media/gPricing4.a2db9ec5.png",
+    "static/media/gPricing5.46879efb.png": "/resume/static/media/gPricing5.46879efb.png",
+    "static/media/gPricing6.ee462d1d.png": "/resume/static/media/gPricing6.ee462d1d.png",
     "static/media/order.aec0979b.png": "/resume/static/media/order.aec0979b.png",
     "static/media/order1.19ff0fee.png": "/resume/static/media/order1.19ff0fee.png",
     "static/media/order2.8224e632.png": "/resume/static/media/order2.8224e632.png",
@@ -96,10 +102,10 @@
     "static/media/webApp6.15b7d0d7.png": "/resume/static/media/webApp6.15b7d0d7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.20822609.js",
+    "static/js/runtime-main.77c979b8.js",
     "static/css/2.07e018fc.chunk.css",
-    "static/js/2.52e8c187.chunk.js",
-    "static/css/main.c48ce619.chunk.css",
-    "static/js/main.bb6115f4.chunk.js"
+    "static/js/2.c7ef2302.chunk.js",
+    "static/css/main.cba50499.chunk.css",
+    "static/js/main.07da0d25.chunk.js"
   ]
 }
