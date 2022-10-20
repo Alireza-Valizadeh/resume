@@ -61,5 +61,24 @@
     "participating_in_tender": "Participating in tender offers",
     "editing_truck": "Editing Truck Information",
     "driver_loads": "Driver Loads and Offers",
-    "driver_info": "Driver Information"
+    "driver_info": "Driver Information",
+    "glo3d_pricing": "Glo3D Payment System",
+    "glo3d_pricing_p1": "This system is designed for subscription of Glo3D's users and supports monthly and annual subscriptions whille charging the customer for features used in a Pay as You Go manner. Stripe is used for the processing of payments. ",
+    "glo3d_pricing_features_before": "All the different parts of this system including but not limited to:",
+    "glo3d_pricing_features_list": [
+        "Different internal APIs",
+        "Necessary webhook events for checkout sessions, subscriptions, products and prices.",
+        "Registering all used features by the user in a Pay as You Go plan",
+        "Holding user invoices and receipts",
+        "Generating daily, monthly and annual reports of users' usage",
+        "Delivering these reports to users as PDF and/or CSV"
+    ],
+    "glo3d_pricing_features_after": "were developed by me.",
+    "glo3d_pricing_p3": "This system is currently being used by our customers.",
+    "my_account_page": "My Account Page",
+    "monthly_subscription_checkout": "Subscription Checkout",
+    "buy_credits_checkout": "Payment Checkout",
+    "faq_page": "FAQ Page",
+    "features_list_page": "Features List",
+    "pricing_page": "Pricing Table"
 }

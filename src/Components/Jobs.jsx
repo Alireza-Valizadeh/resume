@@ -19,6 +19,151 @@ export default function Jobs() {
           </h3>
           {/* <img src={efspco} /> */}
         </div>
+
+        <div className="actualJob">
+          <h4>
+            <a href="https://glo3d.com" target="_blank">
+              {t("glo3d")}
+            </a>
+          </h4>
+          <ul>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                <lord-icon
+                  src="https://cdn.lordicon.com/mdgrhyca.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                {t("glo3d_record")}
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#000000,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                {t("backend_developer")}
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Node.js
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Google Cloud
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Firebase
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Image Processing
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Realtime Database
+              </h5>
+            </li>
+            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
+              <h5>
+                {" "}
+                <lord-icon
+                  src="https://cdn.lordicon.com/jvihlqtw.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#000000"
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                  }}
+                ></lord-icon>
+                Cloud Storage
+              </h5>
+            </li>
+          </ul>
+        </div>
         <div className="actualJob">
           <h4>
             <a href="http://efspco.ir" target="_blank">
@@ -165,150 +310,6 @@ export default function Jobs() {
                   }}
                 ></lord-icon>
                 MongoDB
-              </h5>
-            </li>
-          </ul>
-        </div>
-        <div className="actualJob">
-          <h4>
-            <a href="https://glo3d.com" target="_blank">
-              {t("glo3d")}
-            </a>
-          </h4>
-          <ul>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                <lord-icon
-                  src="https://cdn.lordicon.com/mdgrhyca.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                {t("glo3d_record")}
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#000000,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                {t("backend_developer")}
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Node.js
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Google Cloud
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Firebase
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Image Processing
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Realtime Database
-              </h5>
-            </li>
-            <li style={{ direction: language != "fa" ? "ltr" : "rtl" }}>
-              <h5>
-                {" "}
-                <lord-icon
-                  src="https://cdn.lordicon.com/jvihlqtw.json"
-                  trigger="hover"
-                  colors="primary:#121331,secondary:#000000"
-                  style={{
-                    width: "25px",
-                    height: "25px",
-                    marginLeft: "15px",
-                    marginRight: "15px",
-                  }}
-                ></lord-icon>
-                Cloud Storage
               </h5>
             </li>
           </ul>

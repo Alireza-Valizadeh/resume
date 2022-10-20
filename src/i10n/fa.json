@@ -3,7 +3,7 @@
     "resume": "نمونه کار ها",
     "jobs": "سابقه شغلی",
     "efspco": "شرکت ابتکار فناوران سهند پویا",
-    "glo3d": "شرکت پردازش تصویر Glo3d",
+    "glo3d": "شرکت Glo3D",
     "backend_developer": "  برنامه نویس Backend",
     "fullstack_developer": "  برنامه نویس Full-stack",
     "efspco_record": "از خرداد 1400 تا آذر 1400",
@@ -74,5 +74,11 @@
         "تحویل گزارش های مصرف به کاربر به صورت CSV و PDF"
     ],
     "glo3d_pricing_features_after": "توسط من انجام شده اند.",
-    "glo3d_pricing_p3": "این سیستم هم اکنون در حال استفاده توسط کاربران است."
+    "glo3d_pricing_p3": "این سیستم هم اکنون در حال استفاده توسط کاربران است.",
+    "my_account_page": "صفحه کاربری",
+    "monthly_subscription_checkout": "صفحه پرداخت",
+    "buy_credits_checkout": "صفحه پرداخت",
+    "faq_page": "پرسش و پاسخ",
+    "features_list_page": "لیست فیچر ها",
+    "pricing_page": "جدول قیمت ها"
 }

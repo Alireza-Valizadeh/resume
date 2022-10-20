@@ -22,12 +22,12 @@ export default function Glo3dPricing(props) {
     });
     const buttons = [1, 2, 3, 4, 5, 6];
     const images = [
-        { url: adlCustomerImg3, title: t("registering_loads_2") },
-        { url: adlCustomerImg2, title: t("search_map") },
-        { url: adlCustomerImg1, title: t("registering_loads_1") },
-        { url: adlCustomerImg4, title: t("turnover_report") },
-        { url: adlCustomerImg5, title: t("profile_info") },
-        { url: adlCustomerImg6, title: t("my_loads") },
+        { url: adlCustomerImg3, title: t("buy_credits_checkout") },
+        { url: adlCustomerImg2, title: t("monthly_subscription_checkout") },
+        { url: adlCustomerImg1, title: t("pricing_page") },
+        { url: adlCustomerImg4, title: t("my_account_page") },
+        { url: adlCustomerImg5, title: t("features_list_page") },
+        { url: adlCustomerImg6, title: t("faq_page") },
     ];
     const zoom = useRef();
 
