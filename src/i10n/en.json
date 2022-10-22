@@ -80,5 +80,25 @@
     "buy_credits_checkout": "Payment Checkout",
     "faq_page": "FAQ Page",
     "features_list_page": "Features List",
-    "pricing_page": "Pricing Table"
+    "pricing_page": "Pricing Table",
+
+    "glo3d_emails": "Glo3D Communication System",
+    "glo3d_emails_p1": "This system is designed for users of Glo3D's and eases the communication with the customers by sending scheduled and action-based emails. It also supports unsubscribing. This system uses Sendgrid for sending automated and personalized emails.",
+    "glo3d_emails_features_before": "All the different emails of this system including but not limited to:",
+    "glo3d_emails_features_list": [
+        "Sign up emails",
+        "Subscription emails",
+        "Partner emails",
+        "100 and 1000 captures congratulation emails",
+        "User engagement emails",
+        "Marketing and follow up emails for Automotive Tradeshows in US, CA, ...."
+    ],
+    "glo3d_emails_features_after": "were developed by me.",
+    "glo3d_emails_p3": "This system is currently working and sending emails to the users.",
+    "sign_up_email": "My Account Page",
+    "subscription_email": "Subscription Checkout",
+    "delete_account_email": "Payment Checkout",
+    "some_other_email": "FAQ Page",
+    "some_other_email_2": "Features List",
+    "emails_page": "Pricing Table"
 }

@@ -24,6 +24,14 @@ export default function Resume() {
       <ResumeCard
         img={gloPricing}
         firstTitle={t("glo3d")}
+        secondTitle={t("glo3d_emails")}
+        thirdTitle={"Node.js - Firebase - Sendgrid"}
+        show={true}
+        link={"/Glo3D-emails"}
+      />
+      <ResumeCard
+        img={gloPricing}
+        firstTitle={t("glo3d")}
         secondTitle={t("glo3d_pricing")}
         thirdTitle={"Node.js - Firebase - Stripe"}
         show={true}
