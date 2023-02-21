@@ -46,7 +46,7 @@ export default function Glo3DEmails(props) {
                     <h4> {t("glo3d_emails")} </h4>
                     <h5> Node.js - Firebase - Sendgrid </h5>
                 </header>
-                <div className="album">
+                {/* <div className="album">
                     {images.map((img, index) => (
                         <img
                             src={img.url}
@@ -61,7 +61,7 @@ export default function Glo3DEmails(props) {
                             }}
                         />
                     ))}
-                </div>
+                </div> */}
                 {state.isOpen && (
                     <Lightbox
                         images={images}

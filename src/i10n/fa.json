@@ -3,7 +3,7 @@
     "resume": "نمونه کار ها",
     "jobs": "سابقه شغلی",
     "efspco": "شرکت ابتکار فناوران سهند پویا",
-    "glo3d": "شرکت Glo3D",
+    "glo3d": "شرکت Webreed",
     "backend_developer": "  برنامه نویس Backend",
     "fullstack_developer": "  برنامه نویس Full-stack",
     "efspco_record": "از خرداد 1400 تا آذر 1400",
@@ -62,7 +62,7 @@
     "editing_truck": "ویرایش خودرو",
     "driver_loads": "بار های راننده",
     "driver_info": "اطلاعات کاربر",
-    "glo3d_pricing": "سیستم پرداخت Glo3D",
+    "glo3d_pricing": "سیستم پرداخت Webreed",
     "glo3d_pricing_p1": "این سیستم برای سابسکرایب کردن یوزر های این شرکت طراحی شده و پرداخت های ماهیانه و سالیانه و همچنین Pay as You Go را در خود دارد. در این سیستم از Stripe استفاده شده است. ",
     "glo3d_pricing_features_before": "تمامی بخش های این سیستم از جمله:",
     "glo3d_pricing_features_list": [
