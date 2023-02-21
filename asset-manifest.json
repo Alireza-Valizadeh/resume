@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.cba50499.chunk.css",
-    "main.js": "/resume/static/js/main.ef364e22.chunk.js",
-    "main.js.map": "/resume/static/js/main.ef364e22.chunk.js.map",
+    "main.css": "/resume/static/css/main.cd738aad.chunk.css",
+    "main.js": "/resume/static/js/main.9a3e012d.chunk.js",
+    "main.js.map": "/resume/static/js/main.9a3e012d.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.77c979b8.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.77c979b8.js.map",
     "static/css/2.07e018fc.chunk.css": "/resume/static/css/2.07e018fc.chunk.css",
-    "static/js/2.c7ef2302.chunk.js": "/resume/static/js/2.c7ef2302.chunk.js",
-    "static/js/2.c7ef2302.chunk.js.map": "/resume/static/js/2.c7ef2302.chunk.js.map",
+    "static/js/2.679ef260.chunk.js": "/resume/static/js/2.679ef260.chunk.js",
+    "static/js/2.679ef260.chunk.js.map": "/resume/static/js/2.679ef260.chunk.js.map",
     "static/js/3.3166f751.chunk.js": "/resume/static/js/3.3166f751.chunk.js",
     "static/js/3.3166f751.chunk.js.map": "/resume/static/js/3.3166f751.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.07e018fc.chunk.css.map": "/resume/static/css/2.07e018fc.chunk.css.map",
-    "static/css/main.cba50499.chunk.css.map": "/resume/static/css/main.cba50499.chunk.css.map",
-    "static/js/2.c7ef2302.chunk.js.LICENSE.txt": "/resume/static/js/2.c7ef2302.chunk.js.LICENSE.txt",
+    "static/css/main.cd738aad.chunk.css.map": "/resume/static/css/main.cd738aad.chunk.css.map",
+    "static/js/2.679ef260.chunk.js.LICENSE.txt": "/resume/static/js/2.679ef260.chunk.js.LICENSE.txt",
     "static/media/1830.17ea7927.png": "/resume/static/media/1830.17ea7927.png",
     "static/media/18301.da62d9c8.png": "/resume/static/media/18301.da62d9c8.png",
     "static/media/18302.31b3a00f.png": "/resume/static/media/18302.31b3a00f.png",
@@ -79,6 +79,7 @@
     "static/media/gPricing4.a2db9ec5.png": "/resume/static/media/gPricing4.a2db9ec5.png",
     "static/media/gPricing5.46879efb.png": "/resume/static/media/gPricing5.46879efb.png",
     "static/media/gPricing6.ee462d1d.png": "/resume/static/media/gPricing6.ee462d1d.png",
+    "static/media/gloEmails1.856937fa.png": "/resume/static/media/gloEmails1.856937fa.png",
     "static/media/order.aec0979b.png": "/resume/static/media/order.aec0979b.png",
     "static/media/order1.19ff0fee.png": "/resume/static/media/order1.19ff0fee.png",
     "static/media/order2.8224e632.png": "/resume/static/media/order2.8224e632.png",
@@ -104,8 +105,8 @@
   "entrypoints": [
     "static/js/runtime-main.77c979b8.js",
     "static/css/2.07e018fc.chunk.css",
-    "static/js/2.c7ef2302.chunk.js",
-    "static/css/main.cba50499.chunk.css",
-    "static/js/main.ef364e22.chunk.js"
+    "static/js/2.679ef260.chunk.js",
+    "static/css/main.cd738aad.chunk.css",
+    "static/js/main.9a3e012d.chunk.js"
   ]
 }
